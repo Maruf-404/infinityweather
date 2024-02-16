@@ -1,14 +1,14 @@
-import "./App.css";
-// import Form from './Form'
-// import SearchBox from "./Weather/SearchBox"
-import Weather from "./Weather/Weather";
+import React from 'react'
+import Weather from "./Weather/Weather"
+import "./App.css"
 
 function App() {
   return (
     <>
-      <Weather />
+      <Weather/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
+

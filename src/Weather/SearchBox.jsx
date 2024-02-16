@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-catch */
 /* eslint-disable react/prop-types */
-
+import React from "react"
 import { useState } from "react";
 
 function SearchBox({ updateInfo }) {

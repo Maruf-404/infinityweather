@@ -1,11 +1,11 @@
-// import React from 'react'
+import React from "react";
 import SearchBox from "./SearchBox";
 import InfoBox from "./InfoBox";
 import { useState } from "react";
 import bg from "../assets/wbg.jpg";
 import { Box } from "@mui/material";
 
-export default function Weather() {
+function Weather() {
   let [weatherInfo, setWeatherInfo] = useState({
     city: "Mumbai",
     feelslike: 31.46,
@@ -20,7 +20,6 @@ export default function Weather() {
   let updateInfo = (newInfo) => {
     setWeatherInfo(newInfo);
   };
-
   return (
     <Box
       style={{
@@ -48,3 +47,5 @@ export default function Weather() {
     </Box>
   );
 }
+
+export default Weather;

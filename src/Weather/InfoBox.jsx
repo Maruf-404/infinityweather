@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-
+import React from "react";
 import Typography from "@mui/material/Typography";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import ThunderstormIcon from "@mui/icons-material/Thunderstorm";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import { Box } from "@mui/material";
-import hotImg from "../assets/sunny.jpg";
+import hotImg from "../assets/Sunny.jpg";
 import coldImg from "../assets/cold.jfif";
-import rainImg from "../assets/rain.jpg";
+import rainImg from "../assets/Rain.jpg";
 
 function InfoBox({ info }) {
   let bg = info.humidity > 70 ? rainImg : info.temp > 22 ? hotImg : coldImg;

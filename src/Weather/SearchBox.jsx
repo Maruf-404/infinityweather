@@ -39,7 +39,7 @@ function SearchBox({ updateInfo }) {
     try {
       evt.preventDefault();
       setCity("");
-      setError("")
+      setError("");
       let newInfo = await getWeather();
       updateInfo(newInfo);
     } catch (err) {
@@ -48,6 +48,8 @@ function SearchBox({ updateInfo }) {
   };
 
   return (
+    <>
+        {error && <p style={{ color: "red", fontFamily: "sans-serif" }}>No such place in our api</p>}
     <div
       style={{
         display: "flex",
@@ -58,7 +60,7 @@ function SearchBox({ updateInfo }) {
         right: "2.7rem",
       }}
     >
-        {error && <p style={{ color: "red" }}>No such place in our api</p>}
+    
       <form onSubmit={handleSubmit}>
         <input
           style={{
@@ -95,6 +97,7 @@ function SearchBox({ updateInfo }) {
       <h2 style={{fontFamily: "sans-serif", color: "#fff", position: "relative", left: "2.5rem", }} >Today&apos;s highlights</h2>
       
     </div>
+    </>
   );
 }
 

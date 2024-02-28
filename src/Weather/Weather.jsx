@@ -7,14 +7,14 @@ import { Box } from "@mui/material";
 
 function Weather() {
   let [weatherInfo, setWeatherInfo] = useState({
-    city: "Mumbai",
-    feelslike: 31.46,
-    humidity: 35,
-    temp: 31.99,
-    tempmax: 31.99,
-    tempmin: 30.94,
-    wind_speed: 1.2,
-    weather: "smoke",
+    city: "___",
+    feelslike: "___",
+    humidity: "___",
+    temp: "___",
+    tempmax: "___",
+    tempmin: "___",
+    wind_speed: "___",
+    weather: "___",
   });
 
   let updateInfo = (newInfo) => {
